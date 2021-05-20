@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */; };
 		0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A526547F1D00989ED7 /* AppDelegate.swift */; };
 		0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A726547F1D00989ED7 /* SceneDelegate.swift */; };
 		0449D9AA26547F1D00989ED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A926547F1D00989ED7 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDataMenu.swift; sourceTree = "<group>"; };
 		0449D9A226547F1D00989ED7 /* CoffeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449D9A526547F1D00989ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0449D9A726547F1D00989ED7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0449D9BF26548B0800989ED7 /* Menu.swift */,
+				040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				0449D9AA26547F1D00989ED7 /* ViewController.swift in Sources */,
 				0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */,
+				040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */,
 				0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */,
 				0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */,
 				0449D9C026548B0800989ED7 /* Menu.swift in Sources */,

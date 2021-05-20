@@ -9,14 +9,24 @@ import UIKit
 
 class MenuCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var menuImageView: UIImageView!
+    @IBOutlet weak var menuImageView: UIImageView! {
+        didSet {
+            menuImageView.layer.cornerRadius = 24
+            menuImageView.layer.masksToBounds = true
+        }
+    }
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel! {
+        didSet {
+            priceLabel.layer.cornerRadius = 12
+            priceLabel.layer.masksToBounds = true
+        }
+    }
     
     
     var menu: Menu? {
         didSet {
-            if let image = menu?.imageName {
+            if let image = menu?.imageName{
                 menuImageView.image = UIImage(named: image)
             }
             nameLabel.text = menu?.name
