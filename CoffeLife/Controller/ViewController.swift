@@ -16,29 +16,7 @@ class ViewController: UIViewController {
     }
     
     var menuSection = [menuSpringSummer, menuClassicDrinks, menuCoffePositive, menuTea, menuCoffeeBeans]
-    
-//    var itemMenuArray: [Menu] = {
-//        var itemMenu = Menu()
-//        itemMenu.imageName = "Капучино"
-//        itemMenu.name = "Капучино"
-//        itemMenu.price = "130 ₽"
-//        return [itemMenu]
-//    }()
-    
-//    var menuClassicDrinks = [Menu(imageView: "ДвойнойЭспрессо", name: "Двойной Эспрессо", price: "130 ₽"),
-//                         Menu(imageView: "Американо", name: "Американо", price: "130 ₽"),
-//                         Menu(imageView: "Капучино", name: "Капучино", price: "130 ₽"),
-//                         Menu(imageView: "Латте", name: "Латте", price: "130 ₽"),
-//                         Menu(imageView: "РафКофе", name: "Раф Кофе", price: "130 ₽"),
-//                         Menu(imageView: "ГорячийШоколад", name: "Горячий Шоколад", price: "130 ₽"),
-//                         Menu(imageView: "Какао", name: "Какао", price: "130 ₽"),
-//                         Menu(imageView: "ФлэтУайт", name: "Флэт Уайт", price: "130 ₽"),
-//                         Menu(imageView: "ЛайфФраппе", name: "Лайф Фраппе", price: "130 ₽"),
-//                         Menu(imageView: "Чай", name: "Чай", price: "130 ₽"),
-//                         Menu(imageView: "МолочныйКоктейль", name: "Молочный Коктейль", price: "130 ₽")]
-    
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,14 +40,19 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "menuCell", for: indexPath) as! MenuCollectionViewCell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "menuCell", for: indexPath) as? MenuCollectionViewCell {
         
-        
-//        cell.menu = menuClassicDrinks[indexPath.row]
-        cell.menu = menuSection[indexPath.section][indexPath.row]
+            cell.menu = menuSection[indexPath.section][indexPath.row]
+            return cell
             
-        return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let menu = menuSection[indexPath.section][indexPath.row]
         
+        performSegue(withIdentifier: "detailVC", sender: menu)
     }
     
     
@@ -79,9 +62,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     }
 
     
-    
-    
-    
+        
     //
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -89,6 +70,16 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
         let height = collectionView.frame.size.height / 2.5
         
         return CGSize(width: width, height: height)
+    }
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailVC" {
+            let detailVC = segue.destination as? DetailViewController
+            let menu = sender as? Menu
+            detailVC?.menu = menu
+        }
     }
     
     

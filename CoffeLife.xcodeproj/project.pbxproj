@@ -16,6 +16,7 @@
 		0449D9B226547F1E00989ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449D9B026547F1E00989ED7 /* LaunchScreen.storyboard */; };
 		0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9B92654892600989ED7 /* MenuCollectionViewCell.swift */; };
 		0449D9C026548B0800989ED7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9BF26548B0800989ED7 /* Menu.swift */; };
+		04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AA1F26586E7E00275237 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0449D9B326547F1E00989ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0449D9B92654892600989ED7 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		0449D9BF26548B0800989ED7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		04C3AA1F26586E7E00275237 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 				0449D9BB2654893300989ED7 /* View */,
 				0449D9BC2654893F00989ED7 /* Controller */,
 				0449D9AB26547F1D00989ED7 /* Main.storyboard */,
-				0449D9AE26547F1E00989ED7 /* Assets.xcassets */,
 				0449D9B026547F1E00989ED7 /* LaunchScreen.storyboard */,
+				0449D9AE26547F1E00989ED7 /* Assets.xcassets */,
 				0449D9B326547F1E00989ED7 /* Info.plist */,
 			);
 			path = CoffeLife;
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				0449D9A926547F1D00989ED7 /* ViewController.swift */,
+				04C3AA1F26586E7E00275237 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */,
 				0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */,
 				0449D9C026548B0800989ED7 /* Menu.swift in Sources */,
+				04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
