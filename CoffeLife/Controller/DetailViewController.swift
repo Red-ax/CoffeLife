@@ -11,7 +11,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var menuImageView: UIImageView! {
         didSet {
-            menuImageView.layer.cornerRadius = 54
+            menuImageView.layer.cornerRadius = 10
             menuImageView.layer.masksToBounds = true
             
             guard let image = menu?.imageName else { return }
@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
     }
     @IBOutlet weak var priceLabel: UILabel! {
         didSet {
-            priceLabel.text = menu?.price
+            priceLabel.text = "Цена - \(menu?.price ?? "ошибка")"
         }
     }
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -51,5 +51,11 @@ class DetailViewController: UIViewController {
         
 
     }
+    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(true)
+//        
+//        print("you kill me")
+//    }
 
 }

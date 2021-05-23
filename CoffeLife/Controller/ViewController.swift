@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        //navigationController?.navigationBar.size
     }
 }
 
