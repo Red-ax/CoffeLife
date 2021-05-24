@@ -10,12 +10,15 @@
 		040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */; };
 		0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A526547F1D00989ED7 /* AppDelegate.swift */; };
 		0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A726547F1D00989ED7 /* SceneDelegate.swift */; };
-		0449D9AA26547F1D00989ED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A926547F1D00989ED7 /* ViewController.swift */; };
+		0449D9AA26547F1D00989ED7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A926547F1D00989ED7 /* MenuViewController.swift */; };
 		0449D9AD26547F1D00989ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449D9AB26547F1D00989ED7 /* Main.storyboard */; };
 		0449D9AF26547F1E00989ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449D9AE26547F1E00989ED7 /* Assets.xcassets */; };
 		0449D9B226547F1E00989ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449D9B026547F1E00989ED7 /* LaunchScreen.storyboard */; };
 		0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9B92654892600989ED7 /* MenuCollectionViewCell.swift */; };
 		0449D9C026548B0800989ED7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9BF26548B0800989ED7 /* Menu.swift */; };
+		04953D18265B214D0023ED85 /* PromotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D17265B214D0023ED85 /* PromotionsViewController.swift */; };
+		04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */; };
+		04953D1C265B21830023ED85 /* Promotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D1B265B21830023ED85 /* Promotions.swift */; };
 		04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AA1F26586E7E00275237 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +27,16 @@
 		0449D9A226547F1D00989ED7 /* CoffeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449D9A526547F1D00989ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0449D9A726547F1D00989ED7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0449D9A926547F1D00989ED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0449D9A926547F1D00989ED7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0449D9AC26547F1D00989ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0449D9AE26547F1E00989ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449D9B126547F1E00989ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0449D9B326547F1E00989ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0449D9B92654892600989ED7 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		0449D9BF26548B0800989ED7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		04953D17265B214D0023ED85 /* PromotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewController.swift; sourceTree = "<group>"; };
+		04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsTableViewCell.swift; sourceTree = "<group>"; };
+		04953D1B265B21830023ED85 /* Promotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotions.swift; sourceTree = "<group>"; };
 		04C3AA1F26586E7E00275237 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0449D9B92654892600989ED7 /* MenuCollectionViewCell.swift */,
+				04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,8 +95,9 @@
 		0449D9BC2654893F00989ED7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0449D9A926547F1D00989ED7 /* ViewController.swift */,
+				0449D9A926547F1D00989ED7 /* MenuViewController.swift */,
 				04C3AA1F26586E7E00275237 /* DetailViewController.swift */,
+				04953D17265B214D0023ED85 /* PromotionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			children = (
 				0449D9BF26548B0800989ED7 /* Menu.swift */,
 				040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */,
+				04953D1B265B21830023ED85 /* Promotions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0449D9AA26547F1D00989ED7 /* ViewController.swift in Sources */,
+				0449D9AA26547F1D00989ED7 /* MenuViewController.swift in Sources */,
+				04953D1C265B21830023ED85 /* Promotions.swift in Sources */,
+				04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */,
 				0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */,
+				04953D18265B214D0023ED85 /* PromotionsViewController.swift in Sources */,
 				040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */,
 				0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */,
 				0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */,

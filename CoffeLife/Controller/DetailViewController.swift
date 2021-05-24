@@ -28,7 +28,11 @@ class DetailViewController: UIViewController {
             priceLabel.text = "Цена - \(menu?.price ?? "ошибка")"
         }
     }
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel! {
+        didSet {
+            descriptionLabel.text = menu?.description
+        }
+    }
     @IBOutlet weak var volumeSegmentedControl: UISegmentedControl! {
         didSet {
             volumeSegmentedControl.frame.size.height = 80
