@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
     }
     @IBOutlet weak var priceLabel: UILabel! {
         didSet {
-            priceLabel.text = "Цена - \(menu?.price ?? "ошибка")"
+            priceLabel.text = "Цена - \(menu?.price ?? "ошибка") ₽"
         }
     }
     @IBOutlet weak var descriptionLabel: UILabel! {

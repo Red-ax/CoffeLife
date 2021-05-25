@@ -9,15 +9,24 @@ import UIKit
 
 class PromotionsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var promoImageView: UIImageView! {
+        didSet {
+            promoImageView.layer.cornerRadius = 24
+            promoImageView.layer.masksToBounds = true
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var promoNameLabel: UILabel!
+    @IBOutlet weak var promoDescriptionLabel: UILabel!
+    
+    
+    var promotions: Promotion? {
+        didSet {
+            if let image = promotions?.promoImage {
+                promoImageView.image = UIImage(named: image)
+            }
+            promoNameLabel.text = promotions?.promoName
+            promoDescriptionLabel.text = promotions?.promoDescription
+        }
     }
 
 }

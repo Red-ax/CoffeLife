@@ -30,7 +30,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
                 menuImageView.image = UIImage(named: image)
             }
             nameLabel.text = menu?.name
-            priceLabel.text = menu?.price
+            priceLabel.text = "\(menu?.price ?? "ошибка") ₽"
         }
     }
     

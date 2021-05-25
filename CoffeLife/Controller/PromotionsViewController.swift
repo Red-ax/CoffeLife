@@ -8,22 +8,41 @@
 import UIKit
 
 class PromotionsViewController: UIViewController {
+    
+    @IBOutlet weak var promoTableView: UITableView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        promoTableView.dataSource = self
+        promoTableView.delegate = self
+    }
+
+}
+
+// MARK: - UITableViewDataSource, UITableViewDelegate
+
+extension PromotionsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        promotionsData.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "promoCell", for: indexPath) as? PromotionsTableViewCell {
+            
+            cell.promotions = promotionsData[indexPath.row]
+            
+            return cell
+        }
+        return UITableViewCell()
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
 }
