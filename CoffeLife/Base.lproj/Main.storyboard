@@ -173,6 +173,7 @@
                                             <outlet property="promoDescriptionLabel" destination="YAz-TE-249" id="3vi-G2-eeh"/>
                                             <outlet property="promoImageView" destination="wY6-Bh-udo" id="SqQ-xI-5OE"/>
                                             <outlet property="promoNameLabel" destination="VFK-Hw-aTo" id="Mmn-Ld-HEa"/>
+                                            <segue destination="f7r-KC-gDp" kind="show" identifier="promoCell" id="JfG-1X-ZrS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -196,6 +197,108 @@
             </objects>
             <point key="canvasLocation" x="704.34782608695662" y="924.77678571428567"/>
         </scene>
+        <!--Promo Detail Table View Controller-->
+        <scene sceneID="mew-wa-met">
+            <objects>
+                <tableViewController id="f7r-KC-gDp" customClass="PromoDetailTableViewController" customModule="CoffeLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QeE-Hd-XTP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="aME-7R-0Ng">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PromoDetailImageCell" id="hv8-cc-zCG" customClass="PromoDetailImageCell" customModule="CoffeLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hv8-cc-zCG" id="lbD-at-YYJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo4" translatesAutoresizingMaskIntoConstraints="NO" id="8U6-eR-f7a">
+                                                    <rect key="frame" x="20" y="15" width="374" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="12Q-MT-gGj"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="8U6-eR-f7a" secondAttribute="trailing" constant="20" id="Rd3-Ta-UHV"/>
+                                                <constraint firstAttribute="bottom" secondItem="8U6-eR-f7a" secondAttribute="bottom" constant="15" id="bXb-BB-5mD"/>
+                                                <constraint firstItem="8U6-eR-f7a" firstAttribute="leading" secondItem="lbD-at-YYJ" secondAttribute="leading" constant="20" id="c96-zd-XIR"/>
+                                                <constraint firstItem="8U6-eR-f7a" firstAttribute="top" secondItem="lbD-at-YYJ" secondAttribute="top" constant="15" id="emZ-3s-RxR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="promoImageView" destination="8U6-eR-f7a" id="ymb-yQ-LLr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PromoDetailNameCell" id="ray-cQ-Ho0" customClass="PromoDetailNameCell" customModule="CoffeLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="274.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ray-cQ-Ho0" id="SpY-dP-o6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULr-Tm-hG1">
+                                                    <rect key="frame" x="20" y="15" width="374" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ULr-Tm-hG1" secondAttribute="trailing" constant="20" id="73J-VZ-N1a"/>
+                                                <constraint firstItem="ULr-Tm-hG1" firstAttribute="leading" secondItem="SpY-dP-o6b" secondAttribute="leading" constant="20" id="MhM-PT-6v0"/>
+                                                <constraint firstAttribute="bottom" secondItem="ULr-Tm-hG1" secondAttribute="bottom" constant="15" id="oAn-e9-6P9"/>
+                                                <constraint firstItem="ULr-Tm-hG1" firstAttribute="top" secondItem="SpY-dP-o6b" secondAttribute="top" constant="15" id="saf-5F-8tJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="promoNameLabel" destination="ULr-Tm-hG1" id="zFs-Vb-owg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PromoDetailDescriptionsCell" id="Yze-Yv-Mww" customClass="PromoDetailDescriptionsCell" customModule="CoffeLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="334.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yze-Yv-Mww" id="ntp-Qq-DMc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHW-Ko-sdL">
+                                                    <rect key="frame" x="20" y="15" width="374" height="14"/>
+                                                    <string key="text">i have a table view in which i have two sections. Both sections contain 3 cells under it. Now when i select any cell it shows tick sign, but it selects one cell from both section. i have tried some code but it isn't working. I want that user can select a single cell from both sections and when the table view load its first cell should be preselected. How can i do that? i'm bit confused about preselection of cell.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DHW-Ko-sdL" firstAttribute="leading" secondItem="ntp-Qq-DMc" secondAttribute="leading" constant="20" id="3oS-wc-o1K"/>
+                                                <constraint firstAttribute="bottom" secondItem="DHW-Ko-sdL" secondAttribute="bottom" constant="15" id="GWd-0P-Npg"/>
+                                                <constraint firstItem="DHW-Ko-sdL" firstAttribute="top" secondItem="ntp-Qq-DMc" secondAttribute="top" constant="15" id="Kgk-BW-odH"/>
+                                                <constraint firstItem="DHW-Ko-sdL" firstAttribute="centerX" secondItem="ntp-Qq-DMc" secondAttribute="centerX" id="PFW-Sj-pdd"/>
+                                                <constraint firstAttribute="trailing" secondItem="DHW-Ko-sdL" secondAttribute="trailing" constant="20" id="tIs-kC-029"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="promoDescrioptionsLabel" destination="DHW-Ko-sdL" id="QLf-gL-OTn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="f7r-KC-gDp" id="tCP-yH-CmN"/>
+                            <outlet property="delegate" destination="f7r-KC-gDp" id="wFs-S0-pmy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="j6U-xr-G8K"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3S9-mg-P4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="924.77678571428567"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ch4-Ee-UpW">
             <objects>
@@ -210,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXj-VA-dZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="925"/>
+            <point key="canvasLocation" x="2714" y="992"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="EjM-3j-pGs">
@@ -362,6 +465,7 @@
         <image name="coffee-cup3" width="18.600000381469727" height="25.607000350952148"/>
         <image name="percent" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="promo4" width="752" height="420"/>
         <image name="Чай" width="540" height="540"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

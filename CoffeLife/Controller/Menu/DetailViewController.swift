@@ -14,8 +14,9 @@ class DetailViewController: UIViewController {
             menuImageView.layer.cornerRadius = 10
             menuImageView.layer.masksToBounds = true
             
-            guard let image = menu?.imageName else { return }
-            menuImageView.image = UIImage(named: image)
+            if let image = menu?.imageName {
+                menuImageView.image = UIImage(named: image)
+            }
         }
     }
     @IBOutlet weak var nameLabel: UILabel! {
@@ -51,15 +52,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
     }
-    
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidDisappear(true)
-//        
-//        print("you kill me")
-//    }
 
 }

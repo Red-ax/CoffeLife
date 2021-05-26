@@ -25,7 +25,17 @@ class MenuViewController: UIViewController {
         collectionView.delegate = self
         
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailVC" {
+            let detailVC = segue.destination as? DetailViewController
+            let menu = sender as? Menu
+            detailVC?.menu = menu
+        }
+    }
 }
+
 
 extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -70,18 +80,6 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
         let height = collectionView.frame.size.height / 2.2
         
         return CGSize(width: width, height: height)
-    }
-    
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailVC" {
-            let detailVC = segue.destination as? DetailViewController
-            let menu = sender as? Menu
-            detailVC?.menu = menu
-        }
-    }
-    
-    
+    } 
 }
 
