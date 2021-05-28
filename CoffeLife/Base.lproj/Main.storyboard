@@ -173,7 +173,6 @@
                                             <outlet property="promoDescriptionLabel" destination="YAz-TE-249" id="3vi-G2-eeh"/>
                                             <outlet property="promoImageView" destination="wY6-Bh-udo" id="SqQ-xI-5OE"/>
                                             <outlet property="promoNameLabel" destination="VFK-Hw-aTo" id="Mmn-Ld-HEa"/>
-                                            <segue destination="f7r-KC-gDp" kind="show" identifier="promoCell" id="JfG-1X-ZrS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -188,14 +187,17 @@
                             <constraint firstItem="vQG-XT-j40" firstAttribute="top" secondItem="DT6-Cg-RV9" secondAttribute="top" id="kGZ-HJ-qjj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Акции" id="0gu-qc-8dz"/>
+                    <navigationItem key="navigationItem" title="Акции" id="0gu-qc-8dz">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Alu-2n-p0v"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="promoTableView" destination="vQG-XT-j40" id="uzm-Kv-h3m"/>
+                        <segue destination="v5t-FL-z1C" kind="show" identifier="promoDetailVC" id="Oak-aU-HJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPe-yr-XHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.34782608695662" y="924.77678571428567"/>
+            <point key="canvasLocation" x="187" y="939"/>
         </scene>
         <!--Promo Detail Table View Controller-->
         <scene sceneID="mew-wa-met">
@@ -297,7 +299,103 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3S9-mg-P4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569.5652173913045" y="924.77678571428567"/>
+            <point key="canvasLocation" x="2270" y="971"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="NbJ-8w-8A5">
+            <objects>
+                <viewController id="v5t-FL-z1C" customClass="PromoDetailViewController" customModule="CoffeLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4A-3N-6c0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5N-b2-Zoz">
+                                <rect key="frame" x="0.0" y="140" width="414" height="977"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promo4" translatesAutoresizingMaskIntoConstraints="NO" id="6jZ-JG-U84">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Q6j-9d-T1Y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-Yt-Ruf">
+                                        <rect key="frame" x="20" y="220" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-6W-R12">
+                                        <rect key="frame" x="20" y="266.5" width="374" height="345"/>
+                                        <mutableString key="text">i have a table view in which i have two sections. Both sections contain 3 cells under it. Now when i select any cell it shows tick sign, but it selects one cell from both section. i have tried some code but it isn't working. I want that user can select a single cell from both sections and when the table view load its first cell should be preselected. How can i do that? i'm bit confused about preselection of cell. i have a table view in which i have two sections. Both sections contain 3 cells under it. Now when i select any cell it shows tick sign, but it selects one cell from both section. i have tried some code but it isn't working. I want that user can select a single cell from both sections and when the table view load its first cell should be preselected. How can i do that? i'm bit confused about preselection of cell.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-v4-3Fm">
+                                        <rect key="frame" x="20" y="881.5" width="374" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="1vl-gx-TWf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <state key="normal" title="Все акции">
+                                            <color key="titleColor" red="0.0" green="0.50588235294117645" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allPromoWithSender:" destination="v5t-FL-z1C" eventType="touchUpInside" id="r9r-XS-jZZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6jZ-JG-U84" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="466-26-h1V"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="centerX" secondItem="q5N-b2-Zoz" secondAttribute="centerX" id="67m-fD-Jmh"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="centerX" secondItem="q5N-b2-Zoz" secondAttribute="centerX" id="8Rx-sr-Drn"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="centerX" secondItem="q5N-b2-Zoz" secondAttribute="centerX" id="8Xd-sV-I5m"/>
+                                    <constraint firstItem="6jZ-JG-U84" firstAttribute="centerX" secondItem="q5N-b2-Zoz" secondAttribute="centerX" id="Bht-c7-BcW"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="top" secondItem="6jZ-JG-U84" secondAttribute="bottom" constant="20" id="DQC-tp-0by"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="Gxl-d0-OWT"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUe-Yt-Ruf" secondAttribute="trailing" constant="20" id="JGr-bF-IRf"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUe-Yt-Ruf" secondAttribute="trailing" constant="20" id="LGI-wk-7C5"/>
+                                    <constraint firstItem="Ki2-v4-3Fm" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="Mct-lB-zVu"/>
+                                    <constraint firstItem="Ki2-v4-3Fm" firstAttribute="top" secondItem="TxF-6W-R12" secondAttribute="bottom" constant="270" id="Mkz-jg-J1c"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="Nku-JR-ntJ"/>
+                                    <constraint firstItem="6jZ-JG-U84" firstAttribute="top" secondItem="q5N-b2-Zoz" secondAttribute="top" id="TPo-kj-FmK"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxF-6W-R12" secondAttribute="trailing" constant="20" id="UJe-mG-u7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="6jZ-JG-U84" secondAttribute="trailing" constant="20" id="YkC-v4-oRW"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="top" secondItem="LUe-Yt-Ruf" secondAttribute="bottom" constant="20" id="bcu-XI-MXx"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxF-6W-R12" secondAttribute="trailing" constant="20" id="dOi-pE-z6r"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="top" secondItem="LUe-Yt-Ruf" secondAttribute="bottom" constant="20" id="eak-Cg-pGF"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="top" secondItem="6jZ-JG-U84" secondAttribute="bottom" constant="20" id="fsB-mf-XcR"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="gWe-6b-w60"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ki2-v4-3Fm" secondAttribute="bottom" constant="20" id="iKb-Uz-Hjf"/>
+                                    <constraint firstItem="LUe-Yt-Ruf" firstAttribute="leading" secondItem="q5N-b2-Zoz" secondAttribute="leading" constant="20" id="kwZ-k9-JXm"/>
+                                    <constraint firstItem="TxF-6W-R12" firstAttribute="centerX" secondItem="q5N-b2-Zoz" secondAttribute="centerX" id="ov3-s8-9Z7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ki2-v4-3Fm" secondAttribute="trailing" constant="20" id="y05-Gz-9jb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MFd-bw-l6O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q5N-b2-Zoz" firstAttribute="top" secondItem="MFd-bw-l6O" secondAttribute="top" id="1lA-7e-9yp"/>
+                            <constraint firstItem="q5N-b2-Zoz" firstAttribute="bottom" secondItem="MFd-bw-l6O" secondAttribute="bottom" id="IvH-RG-MO7"/>
+                            <constraint firstItem="q5N-b2-Zoz" firstAttribute="leading" secondItem="MFd-bw-l6O" secondAttribute="leading" id="JXs-uL-LIE"/>
+                            <constraint firstItem="q5N-b2-Zoz" firstAttribute="trailing" secondItem="MFd-bw-l6O" secondAttribute="trailing" id="Rt5-oU-wcd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="Bpf-TG-gcJ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fkX-uV-4xw"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="backAllPromoButton" destination="Ki2-v4-3Fm" id="zIA-2B-EDn"/>
+                        <outlet property="promoDetailDescriptions" destination="TxF-6W-R12" id="Tjt-w6-ZND"/>
+                        <outlet property="promoDetailImageView" destination="6jZ-JG-U84" id="qeg-z8-u1L"/>
+                        <outlet property="promoDetailName" destination="LUe-Yt-Ruf" id="NOT-er-n21"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGf-r3-cGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="1032.5892857142858"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ch4-Ee-UpW">
@@ -313,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXj-VA-dZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2714" y="992"/>
+            <point key="canvasLocation" x="3342" y="939"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="EjM-3j-pGs">
@@ -458,7 +556,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh0-b5-Dhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="925"/>
+            <point key="canvasLocation" x="-625" y="939"/>
         </scene>
     </scenes>
     <resources>

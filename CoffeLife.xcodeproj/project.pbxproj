@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */; };
-		040906F0265DC64700DEEE3B /* PromoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040906EF265DC64700DEEE3B /* PromoDetailTableViewController.swift */; };
-		040906F2265DD3CE00DEEE3B /* PromoDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040906F1265DD3CE00DEEE3B /* PromoDetailImageCell.swift */; };
-		040906F5265DD41E00DEEE3B /* PromoDetailNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040906F4265DD41E00DEEE3B /* PromoDetailNameCell.swift */; };
-		040906F7265DD43D00DEEE3B /* PromoDetailDescriptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040906F6265DD43D00DEEE3B /* PromoDetailDescriptionsCell.swift */; };
 		04445ED9265C6C0B00066AFE /* HelperDataPromotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04445ED8265C6C0B00066AFE /* HelperDataPromotions.swift */; };
 		0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A526547F1D00989ED7 /* AppDelegate.swift */; };
 		0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449D9A726547F1D00989ED7 /* SceneDelegate.swift */; };
@@ -24,15 +20,12 @@
 		04953D18265B214D0023ED85 /* PromotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D17265B214D0023ED85 /* PromotionsViewController.swift */; };
 		04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */; };
 		04953D1C265B21830023ED85 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D1B265B21830023ED85 /* Promotion.swift */; };
+		04AB34072660707800181E30 /* PromoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB34062660707800181E30 /* PromoDetailViewController.swift */; };
 		04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AA1F26586E7E00275237 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040735BB2655EA6C005D8D9E /* HelperDataMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDataMenu.swift; sourceTree = "<group>"; };
-		040906EF265DC64700DEEE3B /* PromoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailTableViewController.swift; sourceTree = "<group>"; };
-		040906F1265DD3CE00DEEE3B /* PromoDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailImageCell.swift; sourceTree = "<group>"; };
-		040906F4265DD41E00DEEE3B /* PromoDetailNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailNameCell.swift; sourceTree = "<group>"; };
-		040906F6265DD43D00DEEE3B /* PromoDetailDescriptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailDescriptionsCell.swift; sourceTree = "<group>"; };
 		04445ED8265C6C0B00066AFE /* HelperDataPromotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDataPromotions.swift; sourceTree = "<group>"; };
 		0449D9A226547F1D00989ED7 /* CoffeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449D9A526547F1D00989ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +40,7 @@
 		04953D17265B214D0023ED85 /* PromotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewController.swift; sourceTree = "<group>"; };
 		04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsTableViewCell.swift; sourceTree = "<group>"; };
 		04953D1B265B21830023ED85 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		04AB34062660707800181E30 /* PromoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailViewController.swift; sourceTree = "<group>"; };
 		04C3AA1F26586E7E00275237 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				04953D17265B214D0023ED85 /* PromotionsViewController.swift */,
-				040906EF265DC64700DEEE3B /* PromoDetailTableViewController.swift */,
+				04AB34062660707800181E30 /* PromoDetailViewController.swift */,
 			);
 			path = Promotions;
 			sourceTree = "<group>";
@@ -109,19 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */,
-				040906F3265DD3D400DEEE3B /* PromoDetailsStaticCells */,
 			);
 			path = Promotions;
-			sourceTree = "<group>";
-		};
-		040906F3265DD3D400DEEE3B /* PromoDetailsStaticCells */ = {
-			isa = PBXGroup;
-			children = (
-				040906F1265DD3CE00DEEE3B /* PromoDetailImageCell.swift */,
-				040906F4265DD41E00DEEE3B /* PromoDetailNameCell.swift */,
-				040906F6265DD43D00DEEE3B /* PromoDetailDescriptionsCell.swift */,
-			);
-			path = PromoDetailsStaticCells;
 			sourceTree = "<group>";
 		};
 		0449D99926547F1D00989ED7 = {
@@ -255,17 +238,14 @@
 			files = (
 				0449D9AA26547F1D00989ED7 /* MenuViewController.swift in Sources */,
 				04953D1C265B21830023ED85 /* Promotion.swift in Sources */,
-				040906F2265DD3CE00DEEE3B /* PromoDetailImageCell.swift in Sources */,
-				040906F0265DC64700DEEE3B /* PromoDetailTableViewController.swift in Sources */,
 				04445ED9265C6C0B00066AFE /* HelperDataPromotions.swift in Sources */,
 				04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */,
-				040906F7265DD43D00DEEE3B /* PromoDetailDescriptionsCell.swift in Sources */,
 				0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */,
 				04953D18265B214D0023ED85 /* PromotionsViewController.swift in Sources */,
 				040735BC2655EA6C005D8D9E /* HelperDataMenu.swift in Sources */,
-				040906F5265DD41E00DEEE3B /* PromoDetailNameCell.swift in Sources */,
 				0449D9A826547F1D00989ED7 /* SceneDelegate.swift in Sources */,
 				0449D9BA2654892600989ED7 /* MenuCollectionViewCell.swift in Sources */,
+				04AB34072660707800181E30 /* PromoDetailViewController.swift in Sources */,
 				0449D9C026548B0800989ED7 /* Menu.swift in Sources */,
 				04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */,
 			);
