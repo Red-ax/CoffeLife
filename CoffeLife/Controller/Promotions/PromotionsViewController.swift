@@ -19,6 +19,10 @@ class PromotionsViewController: UIViewController {
         promoTableView.dataSource = self
         promoTableView.delegate = self
         
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.backgroundColor = .white
+        
 //        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
