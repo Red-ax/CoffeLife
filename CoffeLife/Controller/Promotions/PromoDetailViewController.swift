@@ -50,10 +50,6 @@ class PromoDetailViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .white
-        
-//        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "arrowCustom")
-//        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "arrowCustom")
-//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     
     }
     
