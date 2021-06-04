@@ -367,6 +367,9 @@
                                 <state key="normal" title="Условия программы лояльности">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lpC-04-1l1" kind="show" id="98L-u8-hsB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tz-kU-231">
                                 <rect key="frame" x="19" y="220" width="190" height="36"/>
@@ -404,7 +407,505 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dI-C3-fnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905.79710144927549" y="818.97321428571422"/>
+            <point key="canvasLocation" x="1075" y="1639"/>
+        </scene>
+        <!--Loyalty View Controller-->
+        <scene sceneID="5I2-7t-Xjh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="lpC-04-1l1" customClass="LoyaltyViewController" customModule="CoffeLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nrh-Qx-kcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-Cv-aEK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Условия программы лояльности" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-7h-svu">
+                                        <rect key="frame" x="15" y="30" width="377" height="64.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила участия в программе лояльности COFFEE LIFE (Бонусной программе)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVP-fc-e01">
+                                        <rect key="frame" x="15" y="114.5" width="377" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Nml-6g-83W">
+                                        <rect key="frame" x="15" y="183" width="377" height="580"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-Aa-Olb">
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="122.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM2-Mm-L1Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-Cn-fq5">
+                                                        <rect key="frame" x="0.0" y="30.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISB-zB-Y7L">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="4Bs-Y3-lld"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="PHa-6v-7lB"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма покупок за предыдущий месяц 0-1200 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDT-gK-tZb">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="wVT-BZ-bYj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-RK-aDc">
+                                                        <rect key="frame" x="0.0" y="81.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzN-e0-euB">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="KCX-Pd-pfW"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="zEJ-Ud-pjz"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисляемый бонус, в % от суммы покупки 5%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8R-72-oQR">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="HSQ-ks-za3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2lQ-TG-fdw">
+                                                <rect key="frame" x="0.0" y="152.5" width="377" height="122.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8Y-wR-jdx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="TFn-9l-ldV">
+                                                        <rect key="frame" x="0.0" y="30.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oy5-pc-3AM">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="drr-bH-32A"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="m7P-uN-o6b"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма покупок за предыдущий месяц 1201-2800 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr6-w1-BYD">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="mZC-Zm-btc"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-ZK-5om">
+                                                        <rect key="frame" x="0.0" y="81.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgY-sa-5Oc">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="4f8-EA-QHd"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="S0E-T2-Hc0"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисляемый бонус, в % от суммы покупки 8%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUV-s1-hsF">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="cfQ-vm-jwr"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="otX-ew-kFi">
+                                                <rect key="frame" x="0.0" y="305" width="377" height="122.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K57-QY-4Gt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="xWe-Wr-fzZ">
+                                                        <rect key="frame" x="0.0" y="30.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HH-XT-5AR">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="KLx-BA-cTE"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="yC2-to-KN9"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма покупок за предыдущий месяц 2801-7200 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtQ-Hu-jvW">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="uIt-20-Mm8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="bql-4D-pfz">
+                                                        <rect key="frame" x="0.0" y="81.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39A-Sd-dkw">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="mAx-6L-wck"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="oVW-bZ-Pzj"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисляемый бонус, в % от суммы покупки 12%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yof-EC-AZk">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="eUj-g5-gKx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qud-BQ-hhL">
+                                                <rect key="frame" x="0.0" y="457.5" width="377" height="122.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-nj-hYQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="o4U-Hb-HOa">
+                                                        <rect key="frame" x="0.0" y="30.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ktu-YX-TDe">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="TYg-66-Wnm"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="Wr5-Bn-FLz"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма покупок за предыдущий период 7201 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukj-wU-ZY0">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="96O-V9-YsE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-pk-npU">
+                                                        <rect key="frame" x="0.0" y="81.5" width="377" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dak-sM-IgW">
+                                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="C1s-Ly-7Gf"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="ln7-nY-tJn"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисляемый бонус, в % от суммы покупки 18%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esl-UN-E7o">
+                                                                <rect key="frame" x="21" y="0.0" width="356" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="9XR-C5-KvK"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="377" id="uC7-rB-4e5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qdh-7h-svu" secondAttribute="trailing" constant="15" id="3eR-Mt-RNG"/>
+                                    <constraint firstItem="SVP-fc-e01" firstAttribute="top" secondItem="Qdh-7h-svu" secondAttribute="bottom" constant="20" id="6mP-Jk-cks"/>
+                                    <constraint firstItem="SVP-fc-e01" firstAttribute="leading" secondItem="p1S-Cv-aEK" secondAttribute="leading" constant="15" id="Bsq-Td-gV1"/>
+                                    <constraint firstItem="Nml-6g-83W" firstAttribute="top" secondItem="SVP-fc-e01" secondAttribute="bottom" constant="30" id="NDN-tC-E2f"/>
+                                    <constraint firstItem="Qdh-7h-svu" firstAttribute="top" secondItem="p1S-Cv-aEK" secondAttribute="top" constant="30" id="QL7-9L-yYl"/>
+                                    <constraint firstItem="Qdh-7h-svu" firstAttribute="leading" secondItem="p1S-Cv-aEK" secondAttribute="leading" constant="15" id="QgW-yU-aOe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nml-6g-83W" secondAttribute="bottom" constant="100" id="g5s-nl-kIv"/>
+                                    <constraint firstAttribute="trailing" secondItem="SVP-fc-e01" secondAttribute="trailing" constant="15" id="j72-Oi-Xss"/>
+                                    <constraint firstItem="Nml-6g-83W" firstAttribute="leading" secondItem="p1S-Cv-aEK" secondAttribute="leading" constant="15" id="jBK-bt-t3z"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nml-6g-83W" secondAttribute="trailing" constant="15" id="yar-qP-cfm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="STD-yf-3gg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p1S-Cv-aEK" firstAttribute="top" secondItem="nrh-Qx-kcQ" secondAttribute="top" id="MhV-HS-8aX"/>
+                            <constraint firstItem="p1S-Cv-aEK" firstAttribute="leading" secondItem="STD-yf-3gg" secondAttribute="leading" id="gbL-iE-qrY"/>
+                            <constraint firstAttribute="bottom" secondItem="p1S-Cv-aEK" secondAttribute="bottom" id="hAw-PX-Oyc"/>
+                            <constraint firstItem="p1S-Cv-aEK" firstAttribute="trailing" secondItem="STD-yf-3gg" secondAttribute="trailing" id="nic-7L-rWN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dcb-FO-pQe"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="loyatyScroll" destination="p1S-Cv-aEK" id="KF1-HG-h6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7m-es-CAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266.66666666666669" y="2488.3928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZHE-y6-WXo">
+            <objects>
+                <viewController id="tT9-Zr-U3r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yiI-sI-egW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-FQ-odi">
+                                <rect key="frame" x="20" y="166" width="374" height="142.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48q-jh-h9V">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-Mv-WB8">
+                                        <rect key="frame" x="0.0" y="40.5" width="374" height="41"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-vC-M83">
+                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="jhn-fG-xXb"/>
+                                                    <constraint firstAttribute="width" constant="8" id="ksj-Q2-x5i"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма покупок за предыдущий месяц 0-1200 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x82-q8-Cug">
+                                                <rect key="frame" x="18" y="0.0" width="356" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="2ak-0c-riP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2RE-Jw-80z">
+                                        <rect key="frame" x="0.0" y="101.5" width="374" height="41"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-u3-TYw">
+                                                <rect key="frame" x="0.0" y="16.5" width="8" height="8"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="hmR-nL-LRe"/>
+                                                    <constraint firstAttribute="width" constant="8" id="vEi-k4-dri"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисляемый бонус, в % от суммы покупки 5%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjv-Du-1YB">
+                                                <rect key="frame" x="18" y="0.0" width="356" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="a7g-Bb-Obe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Сумма покупок за предыдущий месяц 0-1200 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiU-d2-6MS">
+                                <rect key="frame" x="38" y="379" width="356" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Mg2-aH-eTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tol-Vx-V9y">
+                                <rect key="frame" x="17" y="395" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="ukI-br-1ju"/>
+                                    <constraint firstAttribute="width" constant="8" id="wko-5s-gEE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Начисляемый бонус, в % от суммы покупки 5%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-Qz-Un1">
+                                <rect key="frame" x="38" y="439" width="356" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="zew-fT-akO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OCO-Eh-f4Z">
+                                <rect key="frame" x="17" y="455" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="S3w-bP-uXi"/>
+                                    <constraint firstAttribute="height" constant="8" id="tEP-bt-xTI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Уровень 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dE-dp-0Eg">
+                                <rect key="frame" x="17" y="350" width="374" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Сумма покупок за предыдущий месяц 0-1200 руб." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-eZ-PAh">
+                                <rect key="frame" x="41" y="558" width="356" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="60B-w4-28f"/>
+                                    <constraint firstAttribute="width" constant="356" id="mpX-Sg-bVK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-dh-qSR">
+                                <rect key="frame" x="20" y="574" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="eNS-qE-lPq"/>
+                                    <constraint firstAttribute="width" constant="8" id="fO7-QB-dUl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Начисляемый бонус, в % от суммы покупки 5%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-aB-NWQ">
+                                <rect key="frame" x="41" y="618" width="356" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="qTG-yA-crj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FX-bn-mM5">
+                                <rect key="frame" x="20" y="634" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.074509803920000006" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="BDa-48-zWE"/>
+                                    <constraint firstAttribute="height" constant="8" id="Naj-Uz-ReQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Уровень 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lx-eG-jtP">
+                                <rect key="frame" x="20" y="529" width="374" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MWs-uA-9Be"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MWs-uA-9Be" firstAttribute="trailing" secondItem="UvE-FQ-odi" secondAttribute="trailing" constant="20" id="e2P-DN-lci"/>
+                            <constraint firstItem="UvE-FQ-odi" firstAttribute="leading" secondItem="MWs-uA-9Be" secondAttribute="leading" constant="20" id="xJQ-EE-uij"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgT-aK-kSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-480" y="2881"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SN8-Yb-AS3">
+            <objects>
+                <viewController id="Mui-3P-xin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rmH-2x-rSX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v0I-fJ-Vgs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9M-Tc-WdC">
+                                <rect key="frame" x="354" y="44" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81542352429999998" green="0.83921568629999999" blue="0.8265606311" alpha="0.068832189860000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeScreen:" destination="qh8-rJ-W5T" eventType="touchUpInside" id="Q7e-k5-Wl8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WR8-A8-qNs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v0I-fJ-Vgs" firstAttribute="trailing" secondItem="WR8-A8-qNs" secondAttribute="trailing" id="1Pn-BX-lRs"/>
+                            <constraint firstAttribute="bottom" secondItem="v0I-fJ-Vgs" secondAttribute="bottom" id="3Bu-1v-0Lz"/>
+                            <constraint firstItem="v0I-fJ-Vgs" firstAttribute="top" secondItem="rmH-2x-rSX" secondAttribute="top" id="axr-B8-cwN"/>
+                            <constraint firstItem="v0I-fJ-Vgs" firstAttribute="leading" secondItem="WR8-A8-qNs" secondAttribute="leading" id="ujv-3E-EmW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cek-9q-OtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.985507246377" y="2488.3928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1h9-Bc-GQR">
+            <objects>
+                <viewController id="Dy3-pr-RsU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYP-bQ-IBM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mk9-lr-QXz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZD-BP-rry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096" y="2488"/>
         </scene>
         <!--Info Page View Controller-->
         <scene sceneID="l1G-0H-g7j">
@@ -414,7 +915,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwC-Tw-4ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802.8985507246377" y="818.97321428571422"/>
+            <point key="canvasLocation" x="1972" y="1639"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="QZG-QM-zP1">
@@ -424,16 +925,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-UF-Os2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-UF-Os2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-yE-rTF">
                                 <rect key="frame" x="146" y="834" width="122" height="28"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-3q-XLW">
-                                <rect key="frame" x="334" y="44" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="0.19450897424399446" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up6-ER-avD">
+                                <rect key="frame" x="20" y="734" width="374" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.50588235294117645" blue="0.074509803921568626" alpha="0.7629438127790179" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Lcm-c3-v33"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <state key="normal" title="Посмотреть предложения">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-3q-XLW">
+                                <rect key="frame" x="354" y="44" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.81542352432905274" green="0.83921568629999999" blue="0.82656063106569777" alpha="0.068832189858365214" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KLs-Ub-Nfs"/>
+                                    <constraint firstAttribute="width" constant="40" id="xf4-U5-ST0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="✕">
@@ -448,22 +963,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yuo-UF-Os2" firstAttribute="trailing" secondItem="fvb-Sf-jZn" secondAttribute="trailing" id="BIa-PB-ZfP"/>
+                            <constraint firstItem="fvb-Sf-jZn" firstAttribute="trailing" secondItem="ELK-3q-XLW" secondAttribute="trailing" constant="20" id="EFZ-cx-BOz"/>
                             <constraint firstItem="yuo-UF-Os2" firstAttribute="leading" secondItem="fvb-Sf-jZn" secondAttribute="leading" id="MaR-6f-vIZ"/>
+                            <constraint firstItem="ELK-3q-XLW" firstAttribute="top" secondItem="fvb-Sf-jZn" secondAttribute="top" id="dGt-6E-h98"/>
                             <constraint firstItem="fnP-yE-rTF" firstAttribute="centerX" secondItem="ALs-rK-bgK" secondAttribute="centerX" id="edy-0z-Kki"/>
+                            <constraint firstItem="Up6-ER-avD" firstAttribute="leading" secondItem="fvb-Sf-jZn" secondAttribute="leading" constant="20" id="g12-fS-xUD"/>
+                            <constraint firstItem="fvb-Sf-jZn" firstAttribute="trailing" secondItem="Up6-ER-avD" secondAttribute="trailing" constant="20" id="l7I-tP-Q9S"/>
                             <constraint firstAttribute="bottom" secondItem="yuo-UF-Os2" secondAttribute="bottom" id="lg0-QM-gfE"/>
                             <constraint firstItem="yuo-UF-Os2" firstAttribute="top" secondItem="ALs-rK-bgK" secondAttribute="top" id="mF9-eW-4lf"/>
+                            <constraint firstItem="fnP-yE-rTF" firstAttribute="top" secondItem="Up6-ER-avD" secondAttribute="bottom" constant="30" id="t2S-cv-JiE"/>
                             <constraint firstItem="fnP-yE-rTF" firstAttribute="bottom" secondItem="fvb-Sf-jZn" secondAttribute="bottom" id="u2p-bA-ahS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="ELK-3q-XLW" id="DYv-Yq-yUd"/>
+                        <outlet property="goPromoButton" destination="Up6-ER-avD" id="Mg9-Q9-IVy"/>
                         <outlet property="pageControl" destination="fnP-yE-rTF" id="hRc-K9-n6D"/>
                         <outlet property="paginationImage" destination="yuo-UF-Os2" id="t1A-kr-pcs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5u4-dW-IlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.1159420289855" y="818.97321428571422"/>
+            <point key="canvasLocation" x="2746" y="1639"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="EjM-3j-pGs">

@@ -21,6 +21,7 @@
 		04953D18265B214D0023ED85 /* PromotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D17265B214D0023ED85 /* PromotionsViewController.swift */; };
 		04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */; };
 		04953D1C265B21830023ED85 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04953D1B265B21830023ED85 /* Promotion.swift */; };
+		049D347D2669B41E000EC945 /* LoyaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D347C2669B41E000EC945 /* LoyaltyViewController.swift */; };
 		04AB34072660707800181E30 /* PromoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB34062660707800181E30 /* PromoDetailViewController.swift */; };
 		04BCA80E2666FD7500C2D3F5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */; };
 		04BCA81126670A3500C2D3F5 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */; };
@@ -44,6 +45,7 @@
 		04953D17265B214D0023ED85 /* PromotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewController.swift; sourceTree = "<group>"; };
 		04953D19265B216D0023ED85 /* PromotionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsTableViewCell.swift; sourceTree = "<group>"; };
 		04953D1B265B21830023ED85 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		049D347C2669B41E000EC945 /* LoyaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyViewController.swift; sourceTree = "<group>"; };
 		04AB34062660707800181E30 /* PromoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailViewController.swift; sourceTree = "<group>"; };
 		04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
@@ -173,12 +175,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		049D347B2669B3CE000EC945 /* AboutClub */ = {
+			isa = PBXGroup;
+			children = (
+				04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */,
+				044201E026671304002E5802 /* ContentViewController.swift */,
+			);
+			path = AboutClub;
+			sourceTree = "<group>";
+		};
+		049D347E2669B423000EC945 /* LoyaltyProgram */ = {
+			isa = PBXGroup;
+			children = (
+				049D347C2669B41E000EC945 /* LoyaltyViewController.swift */,
+			);
+			path = LoyaltyProgram;
+			sourceTree = "<group>";
+		};
 		04BCA80F2666FD7B00C2D3F5 /* Info */ = {
 			isa = PBXGroup;
 			children = (
 				04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */,
-				04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */,
-				044201E026671304002E5802 /* ContentViewController.swift */,
+				049D347B2669B3CE000EC945 /* AboutClub */,
+				049D347E2669B423000EC945 /* LoyaltyProgram */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -256,6 +275,7 @@
 				0449D9AA26547F1D00989ED7 /* MenuViewController.swift in Sources */,
 				04953D1C265B21830023ED85 /* Promotion.swift in Sources */,
 				04445ED9265C6C0B00066AFE /* HelperDataPromotions.swift in Sources */,
+				049D347D2669B41E000EC945 /* LoyaltyViewController.swift in Sources */,
 				04BCA81126670A3500C2D3F5 /* InfoPageViewController.swift in Sources */,
 				04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */,
 				0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */,

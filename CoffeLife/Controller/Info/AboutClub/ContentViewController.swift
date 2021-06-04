@@ -13,8 +13,12 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
-            closeButton.layer.cornerRadius = 18
-            closeButton.layer.masksToBounds = true
+            closeButton.layer.cornerRadius = 14
+        }
+    }
+    @IBOutlet weak var goPromoButton: UIButton! {
+        didSet {
+            goPromoButton.layer.cornerRadius = 18
         }
     }
     
