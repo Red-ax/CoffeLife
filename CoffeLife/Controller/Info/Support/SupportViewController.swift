@@ -1,15 +1,14 @@
 //
-//  LoyaltyViewController.swift
+//  SupportViewController.swift
 //  CoffeLife
 //
-//  Created by mac on 04.06.2021.
+//  Created by mac on 06.06.2021.
 //
 
 import UIKit
 
-class LoyaltyViewController: UIViewController {
+class SupportViewController: UIViewController {
     
-    @IBOutlet weak var loyatyScroll: UIScrollView!
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             closeButton.layer.cornerRadius = 14
@@ -19,14 +18,13 @@ class LoyaltyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        loyatyScroll.contentSize = CGSize(width: loyatyScroll.frame.size.width, height: loyatyScroll.contentSize.height)
-//        loyatyScroll.contentOffset = CGPoint(x: 0, y: loyatyScroll.contentSize.height)
-        
+        // Do any additional setup after loading the view.
     }
     
     @IBAction func closeScreen(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
     
 
     /*

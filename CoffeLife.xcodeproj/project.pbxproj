@@ -26,6 +26,8 @@
 		04BCA80E2666FD7500C2D3F5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */; };
 		04BCA81126670A3500C2D3F5 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */; };
 		04C3AA2026586E7E00275237 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AA1F26586E7E00275237 /* DetailViewController.swift */; };
+		04D3CD49266C4877004E94BA /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3CD48266C4877004E94BA /* SupportViewController.swift */; };
+		04D3CD4C266C4E23004E94BA /* AboutCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3CD4B266C4E23004E94BA /* AboutCompanyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		04BCA81026670A3500C2D3F5 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
 		04C3AA1F26586E7E00275237 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04D3CD48266C4877004E94BA /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		04D3CD4B266C4E23004E94BA /* AboutCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCompanyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +202,26 @@
 				04BCA80D2666FD7500C2D3F5 /* InfoViewController.swift */,
 				049D347B2669B3CE000EC945 /* AboutClub */,
 				049D347E2669B423000EC945 /* LoyaltyProgram */,
+				04D3CD4A266C487B004E94BA /* Support */,
+				04D3CD4D266C4E2C004E94BA /* AboutCompany */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		04D3CD4A266C487B004E94BA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				04D3CD48266C4877004E94BA /* SupportViewController.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		04D3CD4D266C4E2C004E94BA /* AboutCompany */ = {
+			isa = PBXGroup;
+			children = (
+				04D3CD4B266C4E23004E94BA /* AboutCompanyViewController.swift */,
+			);
+			path = AboutCompany;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +296,11 @@
 			files = (
 				0449D9AA26547F1D00989ED7 /* MenuViewController.swift in Sources */,
 				04953D1C265B21830023ED85 /* Promotion.swift in Sources */,
+				04D3CD49266C4877004E94BA /* SupportViewController.swift in Sources */,
 				04445ED9265C6C0B00066AFE /* HelperDataPromotions.swift in Sources */,
 				049D347D2669B41E000EC945 /* LoyaltyViewController.swift in Sources */,
 				04BCA81126670A3500C2D3F5 /* InfoPageViewController.swift in Sources */,
+				04D3CD4C266C4E23004E94BA /* AboutCompanyViewController.swift in Sources */,
 				04953D1A265B216D0023ED85 /* PromotionsTableViewCell.swift in Sources */,
 				0449D9A626547F1D00989ED7 /* AppDelegate.swift in Sources */,
 				044201E126671304002E5802 /* ContentViewController.swift in Sources */,
